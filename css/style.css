@@ -57,6 +57,11 @@ body{
 .logo span {
   font-weight: 400;
 }
+
+.logo p{
+	color:#fff;
+	font-family: 'Exo', sans-serif;
+}
 .top-menu{
 	float: right;
 	margin-top: 0.5em;
@@ -69,7 +74,7 @@ body{
   color: #fff;
   text-decoration: none;
   margin: 0 0.5em;
-  font-size: 1.4em;
+  font-size: 1.25em;
   text-transform: capitalize;
   font-family: 'Exo', sans-serif;
 }
@@ -952,6 +957,48 @@ ul.callbacks_tabs.callbacks2_tabs {
 .social-icons i.icon3:hover {
   background-position: -128px -64px;
 }
+
+/* START */
+.social-icons span{
+	width: 44px;
+	height: 44px;
+	margin: 0px 5px;
+	display: inline-block;
+}
+.social-icons span.fb {
+	background:url("../images/icons/facebook.png") no-repeat;
+	background-size: contain;
+}
+.social-icons span.fb:hover {
+	background:url("../images/icons/facebook-color.png") no-repeat;
+	background-size: contain;
+}
+.social-icons span.gmail {
+	background:url("../images/icons/gmail.png") no-repeat;
+	background-size: contain;
+}
+.social-icons span.gmail:hover {
+	background:url("../images/icons/gmail-color.png") no-repeat;
+	background-size: contain;
+}
+.social-icons span.insta {
+	background:url("../images/icons/insta.png") no-repeat;
+	background-size: contain;
+}
+.social-icons span.insta:hover {
+	background:url("../images/icons/insta-color.png") no-repeat;
+	background-size: contain;
+}
+.social-icons span.whatsapp {
+	background:url("../images/icons/whatsapp.png") no-repeat;
+	background-size: contain;
+}
+.social-icons span.whatsapp:hover {
+	background:url("../images/icons/whatsapp-color.png") no-repeat;
+	background-size: contain;
+}
+/* END */
+
 .footer-bottom {
 	margin-top: 1em;
 }
@@ -2057,13 +2104,14 @@ ul.callbacks_tabs.callbacks2_tabs {
 
 .columns {
     float: left;
-    width: 33.3%;
+    width: 50%;
     padding: 8px;
+	text-align: center;
 }
 
 .columns2 {
     float: right;
-    width: 33.3%;
+    width: 35%;
     padding: 8px;
 }
 
@@ -2110,6 +2158,7 @@ ul.callbacks_tabs.callbacks2_tabs {
 .price .grey {
     background-color: #eee;
     font-size: 20px;
+	border-bottom: 1px solid black;
 }
 
 

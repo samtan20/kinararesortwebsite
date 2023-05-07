@@ -1,9 +1,3 @@
-<!--
-	Author: W3layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -12,8 +6,7 @@
 		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="keywords" content="Luxury Resorts  Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
-		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+		<meta name="keywords" content="Luxury Resorts, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css'>
@@ -21,8 +14,13 @@
 		<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 		<link rel="shortcut icon" href="images/favicon.ico">
 		<link rel="stylesheet" href="css/custom.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+		<link rel="stylesheet" href="css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="css/owl.theme.default.min.css" />
 		<script src="js/jquery-1.8.3.min.js"></script>
 		<script src="js/responsiveslides.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
 		<script>
 			$(function () {
 				$("#slider1").responsiveSlides({
@@ -47,14 +45,6 @@
 		</script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				/*
-					var defaults = {
-					containerID: 'toTop', // fading element id
-					containerHoverID: 'toTopHover', // fading element hover id
-					scrollSpeed: 1200,
-					easingType: 'linear'
-					};
-				*/
 				$().UItoTop({ easingType: 'easeOutQuart' });
 			});
 		</script>
@@ -64,18 +54,45 @@
 		<script type="text/javascript">
 			jQuery(function($) {
 				$(".swipebox").swipebox();
+
+				$(".vf_swipebox").swipebox();
+				$(".room1_swipebox").swipebox();
+				$(".room2_swipebox").swipebox();
+				$(".room3_swipebox").swipebox();
+				$(".room4_swipebox").swipebox();
+				$(".room5_swipebox").swipebox();
+				$(".room6_swipebox").swipebox();
+				$(".around_swipebox").swipebox();
+				$(".food_swipebox").swipebox();
+				$(".celebrity_swipebox").swipebox();
+				$(".ws_swipebox").swipebox();
+				$(".map_swipebox").swipebox();
+			});
+		</script>
+		<script>
+			$(window).on('load', function(){
+				$('#loader').hide();
 			});
 		</script>
 	</head>
 	<body>
+
+		<!-- Loader -->
+		<div id="loader">
+			<img src="images/1496.gif" alt="loader" style="margin-right: 2rem;" />
+			<strong>Loading...</strong>
+		</div>
+
 		<div class="header" id="home">
 			<div class="header-top">
-				<div class="container">
+				<div class="container-fluid">
 					<div class="logo">
-						<a href="index.html">Kinara Beach <span>Resort</span></a>
+						<!-- <a href="index.html">Kinara Beach <span>Resort</span></a>
+						<p>Talashil Tondavali, Malvan</p> -->
+						<a href="index.html"><img id="logoImg" src="images/ezgif.com-crop.gif" ></a>
 					</div>
 					<div class="top-menu">
-						<span class="menu"><img src="images/nav.png" alt=""/> </span>
+						<span class="menu"><img src="images/nav.png" alt=""/></span>
 						<ul>
 							<nav class="cl-effect-3">
 								<li><a href="#home" class="active scroll">home</a></li>
@@ -133,9 +150,9 @@
 			<!-- FlexSlider -->
 			<script defer src="js/jquery.flexslider.js"></script>
 			<script type="text/javascript">
-				$(function(){
-					SyntaxHighlighter.all();
-				});
+				// $(function(){
+				// 	SyntaxHighlighter.all();
+				// });
 				$(window).load(function(){
 					$('.flexslider').flexslider({
 						animation: "slide",
@@ -152,191 +169,756 @@
 			<div class="about-section" id="aboutus">
 				<div class="container">
 					<h3>about <span>us<span></h3>
-						<div class="about-grids">
-							<div class="col-md-3 about-grid">
-								<img src="images/page1_img1.jpg">
-								<h4>Sea-facing <span>Cottages</span></h4>
-								<p>Step out of your room and you would be greeted by the views of pristine sands of Talashil beach!</p>
-							</div>
-							<div class="col-md-3 about-grid">
-								<img src="images/page1_img2.jpg">
-								<h4>Malvani <span>Cuisine</span></h4>
-								<p>We serve a variety of Malwani Cuisine at our resort that you cannot stop eating once tasted.</p>
-							</div>
-							<div class="col-md-3 about-grid">
-								<img src="images/page1_img3.jpg">
-								<h4>Scuba <span>Diving</span></h4>
-								<p>Have a unforgettable date with the incredible marine life under the water which is warm & clear.</p>
-							</div>
-							<div class="col-md-3 about-grid">
-								<img src="images/page1_img4.jpg">
-								<h4>Water <span>Sports</span></h4>
-								<p>Experience the ecstasy, while you scream your lungs out in this remarkable watersports.</p>
-							</div>
-							<div class="clearfix"></div>
+					<div class="about-grids">
+						<div class="col-md-3 about-grid">
+							<img src="images/page1_img1.jpg">
+							<h4>Sea-facing <span>Cottages</span></h4>
+							<p>Step out of your room and you would be greeted by the views of pristine sands of Talashil beach!</p>
 						</div>
-						<div class="single-section">
-							<p><span>Kinara Beach Resort</span> is a new and inviting beach cottage resort on Tondavali beach in North of Malvan town. The beach cottages are solidly built, colourful, attractive and well laid out, most with a decent view of the sea. This property has an access of road with ample parking provision.</p>
-							<p>The bathing on Tondavali beach is particularly good for children, and a firm favorite for young families. The comfort of the standard rooms with basic amenities and authentic Malvani food offered at Kinara beach resort. It is also make it <span>a very popular resort in Tondavali-Talashil</span> for the discerning traveller.</p>
-							<p><span>Tikam family</span> is host at Kinara Beach Resort,Tondavali-Talashil. A youngster Mr Tata, being a son soil and sea, he has his own coconut plantation and fishing boat.  His family sharing his hands with him in the service. This down to earth family helps guests at Kinara beach resort and give feeling to be at home and make their vacation memorable.</p>
-							<p>The resort is located towards <span>the north of Malvan town</span>. The closest Bus Stop is “Suruche ban” in tondavali-talashil, Malvan market is 25 km by road. Within a 30 km radius of Tondavali-Talashil Beach is Chivala beach, Malvan beach, Achare beach and Tarkarli beach. It is close to some of destinations like Wagheshwar temple, confluence of gad river and Arabian sea, Rameshwar temple Kandalgaon, Shree Bhagwati temple, Revandi. Tondavali-talashil beach is divert beach to arrange parties with silent music.</p>
+						<div class="col-md-3 about-grid">
+							<img src="images/page1_img2.jpg">
+							<h4>Malvani <span>Cuisine</span></h4>
+							<p>We serve a variety of Malwani Cuisine at our resort that you cannot stop eating once tasted.</p>
 						</div>
-							<font color="white"><center><h1>Amenities</h1>
-								<table style="width:100%" BORDER=5 BORDERCOLOR=white>
-									<tr>
-										<td>- Spacious room</td>
-										<td>- Luxurious & relaxing beach with Sea View</td>
-										<td>- LED TV</td>
-										<td>- AC and Non-AC rooms</td>
-									</tr>
-									<tr>
-										<td>- Outdoor Dining table with shed</td>
-										<td>- Coffee / Tea Facilities</td>
-										<td>- Authentic Veg and Non-Veg Malwani food</td>
-										<td>- Private sitting area</td>
-									</tr>
-									<tr>
-										<td>- Packaged Drinking Water on surcharge</td>
-										<td>- Campfire facility</td>
-										<td>- Extra mattresses available on demand</td>
-										<td>- Hot bathing water</td>
-									</tr>
-									<tr>
-										<td>- Refrigerator available for chilled beverages</td>
-										<td>- Complimentary bathroom amenities</td>
-										<td>- Ample & Free Parking space</td>
-										<td>- Dolphin Point visit</td>
-									</tr>
-									<tr>
-										<td>- Boating and Water Sports facility on surcharge</td>
-										<td>- Diving & snorkeling activities</td>
-										<td>- Sightseeing arrangements upon request</td>
-										<td>- Pickup & Drop facility on surcharge</td>
-									</tr>
-								</table>
-							</center>
-							</font>
+						<div class="col-md-3 about-grid">
+							<img src="images/page1_img3.jpg">
+							<h4>Scuba <span>Diving</span></h4>
+							<p>Have a unforgettable date with the incredible marine life under the water which is warm & clear.</p>
+						</div>
+						<div class="col-md-3 about-grid">
+							<img src="images/page1_img4.jpg">
+							<h4>Water <span>Sports</span></h4>
+							<p>Experience the ecstasy, while you scream your lungs out in this remarkable watersports.</p>
+						</div>
+						<div class="clearfix"></div>
 					</div>
+					<div class="gReview my-4">
+						<div class="px-2 border-right">
+							<img id="gImg" src="images/icons/google_logo.png" alt="google icon" />
+							<h4 class="text-white">Reviews</h4>
+						</div>
+						<div class="px-2 border-left">
+							<div class="upperDiv">
+								<h1 class="text-white">4.6</h1>
+								
+							</div>
+							<div class="stars px-2">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star-half-stroke"></i>
+							</div>
+							<div class="lowerDiv">
+								<h4 class="text-white">Excellent</h4>
+								<p class="text-white px-2">|</p>
+								<a class="reviewsLink" target="_blank" href="https://www.google.com/travel/search?g2lb=2502548,2503771,2503781,2504181,4258168,4270442,4284970,4291517,4306835,4308227,4597339,4757164,4814050,4850738,4864715,4874190,4886480,4893075,4920132,4924070,4936396,4965990,4968087,4972345,4977922,4986064,4991445,4998325,72249257,72251324&hl=en-IN&gl=in&cs=1&ssta=1&q=kinara+beach+resort+talashil&ts=CAESABpGCigSJjIkMHgzYmVhYTc3OGRhM2U3NjViOjB4YTQxMzVlZjI4MDFlYTQwEhoSFAoHCOcPEAQYHhIHCOcPEAUYARgBMgIQAA&qs=CAEyE0Nnb0l3TlNId1BLOXphQUtFQUU4AkILCUDqASjvNUEKGAFCCwlA6gEo7zVBChgB&ap=ugEHcmV2aWV3cw&ictx=1&sa=X&ved=2ahUKEwjc-bbwo7v-AhU-8jgGHTW_Cf8Q4gl6BQitARAF">118 reviews</a>
+							</div>
+						</div>
 					</div>
-					<div class="gallery-section" id="gallery">
-						<h3>Gall<span>ery</span></h3>
-						<section id="exemple">
-							<div class="box"> <a href="images/Gallery/1.jpg" class="swipebox" title="1"> <img src="images/Gallery/small/1.jpg" alt="1"> </a> </div>
-							<div class="box"> <a href="images/Gallery/2.jpg" class="swipebox" title="2"> <img src="images/Gallery/small/2.jpg" alt="2"> </a> </div>
-							<div class="box"> <a href="images/Gallery/3.jpg" class="swipebox" title="3"> <img src="images/Gallery/small/3.jpg" alt="3"> </a> </div>
-							<div class="box"> <a href="images/Gallery/4.jpg" class="swipebox" title="4"> <img src="images/Gallery/small/4.jpg" alt="4"> </a> </div>
-							<div class="box"> <a href="images/Gallery/5.jpg" class="swipebox" title="5"> <img src="images/Gallery/small/5.jpg" alt="5"> </a> </div>
-							<div class="box"> <a href="images/Gallery/6.jpg" class="swipebox" title="6"> <img src="images/Gallery/small/6.jpg" alt="6"> </a> </div>
-							<div class="box"> <a href="images/Gallery/7.jpg" class="swipebox" title="7"> <img src="images/Gallery/small/7.jpg" alt="7"> </a> </div>
-							<div class="box"> <a href="images/Gallery/8.jpg" class="swipebox" title="8"> <img src="images/Gallery/small/8.jpg" alt="8"> </a> </div>
-							<div class="box"> <a href="images/Gallery/9.jpg" class="swipebox" title="9"> <img src="images/Gallery/small/9.jpg" alt="9"> </a> </div>
-							<div class="box"> <a href="images/Gallery/10.jpg" class="swipebox" title="10"> <img src="images/Gallery/small/10.jpg" alt="10"> </a> </div>
-							<div class="box"> <a href="images/Gallery/11.jpg" class="swipebox" title="11"> <img src="images/Gallery/small/11.jpg" alt="11"> </a> </div>
-							<div class="box"> <a href="images/Gallery/12.jpg" class="swipebox" title="12"> <img src="images/Gallery/small/12.jpg" alt="12"> </a> </div>
-							<div class="box"> <a href="images/Gallery/13.jpg" class="swipebox" title="13"> <img src="images/Gallery/small/13.jpg" alt="13"> </a> </div>
-							<div class="box"> <a href="images/Gallery/14.jpg" class="swipebox" title="14"> <img src="images/Gallery/small/14.jpg" alt="14"> </a> </div>
-							<div class="box"> <a href="images/Gallery/15.jpg" class="swipebox" title="15"> <img src="images/Gallery/small/15.jpg" alt="15"> </a> </div>
-							<div class="box"> <a href="images/Gallery/16.jpg" class="swipebox" title="16"> <img src="images/Gallery/small/16.jpg" alt="16"> </a> </div>
-							<div class="box"> <a href="images/Gallery/17.jpg" class="swipebox" title="17"> <img src="images/Gallery/small/17.jpg" alt="17"> </a> </div>
-							<div class="box"> <a href="images/Gallery/18.jpg" class="swipebox" title="18"> <img src="images/Gallery/small/18.jpg" alt="18"> </a> </div>
-							<div class="box"> <a href="images/Gallery/19.jpg" class="swipebox" title="19"> <img src="images/Gallery/small/19.jpg" alt="19"> </a> </div>
-							<div class="box"> <a href="images/Gallery/20.jpg" class="swipebox" title="20"> <img src="images/Gallery/small/20.jpg" alt="20"> </a> </div>
-							<div class="box"> <a href="images/Gallery/21.jpg" class="swipebox" title="21"> <img src="images/Gallery/small/21.jpg" alt="21"> </a> </div>
-							<div class="box"> <a href="images/Gallery/22.jpg" class="swipebox" title="22"> <img src="images/Gallery/small/22.jpg" alt="22"> </a> </div>
-							<div class="box"> <a href="images/Gallery/23.jpg" class="swipebox" title="23"> <img src="images/Gallery/small/23.jpg" alt="23"> </a> </div>
-							<div class="box"> <a href="images/Gallery/24.jpg" class="swipebox" title="24"> <img src="images/Gallery/small/24.jpg" alt="24"> </a> </div>
-							<div class="box"> <a href="images/Gallery/25.jpg" class="swipebox" title="25"> <img src="images/Gallery/small/25.jpg" alt="25"> </a> </div>
-							<div class="box"> <a href="images/Gallery/26.jpg" class="swipebox" title="26"> <img src="images/Gallery/small/26.jpg" alt="26"> </a> </div>
-							<div class="box"> <a href="images/Gallery/27.jpg" class="swipebox" title="27"> <img src="images/Gallery/small/27.jpg" alt="27"> </a> </div>
-							<div class="box"> <a href="images/Gallery/28.jpg" class="swipebox" title="28"> <img src="images/Gallery/small/28.jpg" alt="28"> </a> </div>
-							<div class="box"> <a href="images/Gallery/29.jpg" class="swipebox" title="29"> <img src="images/Gallery/small/29.jpg" alt="29"> </a> </div>
-							<div class="box"> <a href="images/Gallery/30.jpg" class="swipebox" title="30"> <img src="images/Gallery/small/30.jpg" alt="30"> </a> </div>
-							<div class="box"> <a href="images/Gallery/31.jpg" class="swipebox" title="31"> <img src="images/Gallery/small/31.jpg" alt="31"> </a> </div>
-							<div class="box"> <a href="images/Gallery/32.jpg" class="swipebox" title="32"> <img src="images/Gallery/small/32.jpg" alt="32"> </a> </div>
-							<div class="clear"></div>
-						</section>
-						<div class="clearfix"> </div>
+					<div class="single-section">
+						<p><span>Kinara Beach Resort</span> is a new and inviting beach cottage resort on Tondavali beach in North of Malvan town. The beach cottages are solidly built, colourful, attractive and well laid out, most with a decent view of the sea. This property has an access of road with ample parking provision.</p>
+						<p>The bathing on Tondavali beach is particularly good for children, and a firm favorite for young families. The comfort of the standard rooms with basic amenities and authentic Malvani food offered at Kinara beach resort. It is also make it <span>a very popular resort in Tondavali-Talashil</span> for the discerning traveller.</p>
+						<p><span>Tikam family</span> is host at Kinara Beach Resort,Tondavali-Talashil. A youngster Mr Tata, being a son soil and sea, he has his own coconut plantation and fishing boat.  His family sharing his hands with him in the service. This down to earth family helps guests at Kinara beach resort and give feeling to be at home and make their vacation memorable.</p>
+						<p>The resort is located towards <span>the north of Malvan town</span>. The closest Bus Stop is “Suruche ban” in tondavali-talashil, Malvan market is 25 km by road. Within a 30 km radius of Tondavali-Talashil Beach is Chivala beach, Malvan beach, Achare beach and Tarkarli beach. It is close to some of destinations like Wagheshwar temple, confluence of gad river and Arabian sea, Rameshwar temple Kandalgaon, Shree Bhagwati temple, Revandi. Tondavali-talashil beach is divert beach to arrange parties with silent music.</p>
+					</div>
+					<font color="white">
+						<center>
+							<h1>Amenities</h1>
+							<table style="width:100%" BORDER=5 BORDERCOLOR=white>
+								<tr>
+									<td>- Spacious room</td>
+									<td>- Luxurious & relaxing beach with Sea View</td>
+									<td>- LED TV</td>
+									<td>- AC and Non-AC rooms</td>
+								</tr>
+								<tr>
+									<td>- Outdoor Dining table with shed</td>
+									<td>- Coffee / Tea Facilities</td>
+									<td>- Authentic Veg and Non-Veg Malwani food</td>
+									<td>- Private sitting area</td>
+								</tr>
+								<tr>
+									<td>- Packaged Drinking Water on surcharge</td>
+									<td>- Campfire facility</td>
+									<td>- Extra mattresses available on demand</td>
+									<td>- Hot bathing water</td>
+								</tr>
+								<tr>
+									<td>- Refrigerator available for chilled beverages</td>
+									<td>- Complimentary bathroom amenities</td>
+									<td>- Ample & Free Parking space</td>
+									<td>- Dolphin Point visit</td>
+								</tr>
+								<tr>
+									<td>- Boating and Water Sports facility on surcharge</td>
+									<td>- Diving & snorkeling activities</td>
+									<td>- Sightseeing arrangements upon request</td>
+									<td>- Pickup & Drop facility on surcharge</td>
+								</tr>
+							</table>
+						</center>
+					</font>
+				</div>
+			</div>
+			<div class="gallery-section" id="gallery">
+				<h3>Gall<span>ery</span></h3>
 
-					</div>
-					<div class="price-section" id="pricing">
-						<div class="price-tables">
-							<div class="container">
-								<h3>our <span>price</span></h3>
-								<div class="columns">
-									<ul class="price">
-										<li class="header">Standard - Non A/C Rooms</li>
-										<li class="grey">Tariff &#8594; &#8377 1500</li>
-										<li >Total Rooms &#8594; 2</li>
-										<li>Capacity &#8594; 5 people</li>
-										<li>Extra Person &#8594; &#8377 200</li>
-									</ul>
-								</div>
-								<div class="columns hide_mobile">
-									<img src="images/beach_rooms.png" alt="beach rate"/>
-								</div>
-								<div class="columns2">
-									<ul class="price">
-										<li class="header">Premium - A/C Rooms</li>
-										<li class="grey">Tariff &#8594; &#8377 2000</li>
-										<li>Total Rooms &#8594; 2</li>
-										<li>Capacity &#8594; 5 people</li>
-										<li>Extra Person &#8594; &#8377 200</li>
-									</ul>
+				<div class="responsive_tab">
+					<main>
+						<input id="rooms" type="radio" name="gallery" checked>
+						<label for="rooms">Rooms</label>
+						<input id="around" type="radio" name="gallery">
+						<label for="around">Around</label>
+						<input id="food" type="radio" name="gallery">
+						<label for="food">Food</label>
+						<input id="celebrity" type="radio" name="gallery">
+						<label for="celebrity">Celebrity Katta</label>
+						
+						<section id="contentR">
+							<div>
+								<label class="owlHeader">Room 1</label>
+								<div class="owl-carousel owl-theme owlGallery">
+									<div class="item">
+										<a href="images/Rooms/Room 1/1.jpg" class="room1_swipebox" title="1">
+											<img src="images/Rooms/Room 1/1.jpg" alt="1" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 1/2.jpg" class="room1_swipebox" title="2">
+											<img src="images/Rooms/Room 1/2.jpg" alt="2" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 1/3.jpg" class="room1_swipebox" title="3">
+											<img src="images/Rooms/Room 1/3.jpg" alt="3" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 1/4.jpg" class="room1_swipebox" title="4">
+											<img src="images/Rooms/Room 1/4.jpg" alt="4" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 1/5.jpg" class="room1_swipebox" title="5">
+											<img src="images/Rooms/Room 1/5.jpg" alt="5" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 1/6.jpg" class="room1_swipebox" title="5">
+											<img src="images/Rooms/Room 1/6.jpg" alt="5" height="42" width="42">
+										</a>
+									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div class="blog-section" id="how-to-reach">
-						<div class="container">
-							<h3> How to <span>Reach</span></h3>
-							<div class="single-section">
-								<span>By Rail</span>
-								<p>Kudal is the nearest railway station which is 35 Kms. Kankavali is also the nearest railway station which is 50 Kms. (Car-on-hire is available on request for pick up and drop).</p>
-								<span>By Road - From Mumbai</span>
-								<p>From Mumbai – Goa NH 17 – Hathkhamba – Kankavali – ( Right turn) – Achara - Vaigani - Malvan – Tondavali.  <a href="https://goo.gl/maps/mbKYm9ZxMBM2" target="_blank">Get Map</a></p>
-								<p>From Mumbai – Express Way – Pune – Kolhapur – Gaganbawada – Vaibhavwadi – Talere – Kankavali – ( Right turn) – Achara - Vaigani - Malvan – Tondavali.  <a href="https://goo.gl/maps/mbKYm9ZxMBM2" target="_blank">Get Map</a></p>
-								<span>By Road - From Pune</span>
-								<p>From Pune – Kolhapur – Gaganbawada – Vaibhavwadi – Talere – Kankavali – ( Right turn) – Achara - Vaigani - Malvan – Tondavali. <a href="https://goo.gl/maps/nV5rBSXtCev" target="_blank">Get Map</a></p>
-								<span>By Road - From Goa</span>
-								<p>Mapusa – Banda – Kudal – Malvan – Tondavali. <a href="https://goo.gl/maps/Z4N3W8hwLwk" target="_blank">Get Map</a></p>
-								<span>By Air</span>
-								<p>Goa airport (Dabolim) is nearest domestic airport.</p>
+							<div>
+								<label class="owlHeader">Room 2</label>
+								<div class="owl-carousel owl-theme owlGallery">
+									<div class="item">
+										<a href="images/Rooms/Room 2/1.jpg" class="room2_swipebox" title="1">
+											<img src="images/Rooms/Room 2/1.jpg" alt="1" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 2/2.jpg" class="room2_swipebox" title="2">
+											<img src="images/Rooms/Room 2/2.jpg" alt="2" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 2/3.jpg" class="room2_swipebox" title="3">
+											<img src="images/Rooms/Room 2/3.jpg" alt="3" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 2/4.jpg" class="room2_swipebox" title="4">
+											<img src="images/Rooms/Room 2/4.jpg" alt="4" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 2/5.jpg" class="room2_swipebox" title="5">
+											<img src="images/Rooms/Room 2/5.jpg" alt="5" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 2/6.jpg" class="room2_swipebox" title="5">
+											<img src="images/Rooms/Room 2/6.jpg" alt="5" height="42" width="42">
+										</a>
+									</div>
+								</div>
 							</div>
-							<div class="clearfix"> </div>
+							<div>
+								<label class="owlHeader">Room 3</label>
+								<div class="owl-carousel owl-theme owlGallery">
+									<div class="item">
+										<a href="images/Rooms/Room 3/r3_1.jpg" class="room3_swipebox" title="1">
+											<img src="images/Rooms/Room 3/r3_1.jpg" alt="1" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 3/r3_2.jpg" class="room3_swipebox" title="2">
+											<img src="images/Rooms/Room 3/r3_2.jpg" alt="2" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 3/r3_3.jpg" class="room3_swipebox" title="3">
+											<img src="images/Rooms/Room 3/r3_3.jpg" alt="3" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 3/r3_4.jpg" class="room3_swipebox" title="4">
+											<img src="images/Rooms/Room 3/r3_4.jpg" alt="4" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 3/r3_5.jpg" class="room3_swipebox" title="5">
+											<img src="images/Rooms/Room 3/r3_5.jpg" alt="5" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 3/r3_6.jpg" class="room3_swipebox" title="5">
+											<img src="images/Rooms/Room 3/r3_6.jpg" alt="5" height="42" width="42">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div>
+								<label class="owlHeader">Room 4</label>
+								<div class="owl-carousel owl-theme owlGallery">
+									<div class="item">
+										<a href="images/Rooms/Room 4/r4_1.jpg" class="room4_swipebox" title="1">
+											<img src="images/Rooms/Room 4/r4_1.jpg" alt="1" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 4/r4_2.jpg" class="room4_swipebox" title="2">
+											<img src="images/Rooms/Room 4/r4_2.jpg" alt="2" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 4/r4_3.jpg" class="room4_swipebox" title="3">
+											<img src="images/Rooms/Room 4/r4_3.jpg" alt="3" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 4/r4_4.jpg" class="room4_swipebox" title="4">
+											<img src="images/Rooms/Room 4/r4_4.jpg" alt="4" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 4/r4_5.jpg" class="room4_swipebox" title="5">
+											<img src="images/Rooms/Room 4/r4_5.jpg" alt="5" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 4/r4_6.jpeg" class="room4_swipebox" title="5">
+											<img src="images/Rooms/Room 4/r4_6.jpeg" alt="5" height="42" width="42">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div>
+								<label class="owlHeader">Room 5</label>
+								<div class="owl-carousel owl-theme owlGallery">
+									<div class="item">
+										<a href="images/Rooms/Room 5/r5_1.jpg" class="room5_swipebox" title="1">
+											<img src="images/Rooms/Room 5/r5_1.jpg" alt="1" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 5/r5_2.jpeg" class="room5_swipebox" title="2">
+											<img src="images/Rooms/Room 5/r5_2.jpeg" alt="2" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 5/r5_3.jpeg" class="room5_swipebox" title="3">
+											<img src="images/Rooms/Room 5/r5_3.jpeg" alt="3" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 5/r5_4.jpg" class="room5_swipebox" title="4">
+											<img src="images/Rooms/Room 5/r5_4.jpg" alt="4" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 5/r5_5.jpeg" class="room5_swipebox" title="5">
+											<img src="images/Rooms/Room 5/r5_5.jpeg" alt="5" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 5/r5_6.jpeg" class="room5_swipebox" title="5">
+											<img src="images/Rooms/Room 5/r5_6.jpeg" alt="5" height="42" width="42">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div>
+								<label class="owlHeader">Room 6</label>
+								<div class="owl-carousel owl-theme owlGallery">
+									<div class="item">
+										<a href="images/Rooms/Room 6/r6_1.jpg" class="room6_swipebox" title="1">
+											<img src="images/Rooms/Room 6/r6_1.jpg" alt="1" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 6/r6_2.jpg" class="room6_swipebox" title="2">
+											<img src="images/Rooms/Room 6/r6_2.jpg" alt="2" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 6/r6_3.jpg" class="room6_swipebox" title="3">
+											<img src="images/Rooms/Room 6/r6_3.jpg" alt="3" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 6/r6_4.jpeg" class="room6_swipebox" title="4">
+											<img src="images/Rooms/Room 6/r6_4.jpeg" alt="4" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 6/r6_5.jpeg" class="room6_swipebox" title="5">
+											<img src="images/Rooms/Room 6/r6_5.jpeg" alt="5" height="42" width="42">
+										</a>
+									</div>
+									<div class="item">
+										<a href="images/Rooms/Room 6/r6_6.jpeg" class="room6_swipebox" title="5">
+											<img src="images/Rooms/Room 6/r6_6.jpeg" alt="5" height="42" width="42">
+										</a>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section id="contentA">
+							<div class="owl-carousel owl-theme owlGallery">
+								<div class="item">
+									<a href="images/Around/24.png" class="around_swipebox" title="1">
+										<img src="images/Around/24.png" alt="1" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Around/25.png" class="around_swipebox" title="2">
+										<img src="images/Around/25.png" alt="2" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Around/26.png" class="around_swipebox" title="3">
+										<img src="images/Around/26.png" alt="3" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Around/27.png" class="around_swipebox" title="4">
+										<img src="images/Around/27.png" alt="4" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Around/28.png" class="around_swipebox" title="5">
+										<img src="images/Around/28.png" alt="5" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Around/29.png" class="around_swipebox" title="1">
+										<img src="images/Around/29.png" alt="1" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Around/30.png" class="around_swipebox" title="2">
+										<img src="images/Around/30.png" alt="2" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Around/31.png" class="around_swipebox" title="3">
+										<img src="images/Around/31.png" alt="3" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Around/32.png" class="around_swipebox" title="4">
+										<img src="images/Around/32.png" alt="4" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Around/33.png" class="around_swipebox" title="5">
+										<img src="images/Around/33.png" alt="5" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Around/34.png" class="around_swipebox" title="5">
+										<img src="images/Around/34.png" alt="5" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Around/35.png" class="around_swipebox" title="5">
+										<img src="images/Around/35.png" alt="5" height="42" width="42">
+									</a>
+								</div>
+							</div>
+						</section>
+						<section id="contentF">
+							<div class="owl-carousel owl-theme owlGallery">
+								<div class="item">
+									<a href="images/Food/7.png" class="food_swipebox" title="1">
+										<img src="images/Food/7.png" alt="1" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Food/8.png" class="food_swipebox" title="2">
+										<img src="images/Food/8.png" alt="2" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Food/9.png" class="food_swipebox" title="3">
+										<img src="images/Food/9.png" alt="3" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Food/10.png" class="food_swipebox" title="4">
+										<img src="images/Food/10.png" alt="4" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Food/11.png" class="food_swipebox" title="5">
+										<img src="images/Food/11.png" alt="5" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Food/12.png" class="food_swipebox" title="5">
+										<img src="images/Food/12.png" alt="5" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Food/13.png" class="food_swipebox" title="5">
+										<img src="images/Food/13.png" alt="5" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Food/14.png" class="food_swipebox" title="5">
+										<img src="images/Food/14.png" alt="5" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Food/15.png" class="food_swipebox" title="5">
+										<img src="images/Food/15.png" alt="5" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Food/16.png" class="food_swipebox" title="5">
+										<img src="images/Food/16.png" alt="5" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Food/17.png" class="food_swipebox" title="5">
+										<img src="images/Food/17.png" alt="5" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Food/18.png" class="food_swipebox" title="5">
+										<img src="images/Food/18.png" alt="5" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Food/19.png" class="food_swipebox" title="5">
+										<img src="images/Food/19.png" alt="5" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Food/20.png" class="food_swipebox" title="5">
+										<img src="images/Food/20.png" alt="5" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Food/21.png" class="food_swipebox" title="5">
+										<img src="images/Food/21.png" alt="5" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Food/22.png" class="food_swipebox" title="5">
+										<img src="images/Food/22.png" alt="5" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Food/23.png" class="food_swipebox" title="5">
+										<img src="images/Food/23.png" alt="5" height="42" width="42">
+									</a>
+								</div>
+							</div>
+						</section>
+						<section id="contentC">
+							<div class="owl-carousel owl-theme owlGallery">
+								<div class="item">
+									<a href="images/Celebrity/1.png" class="celebrity_swipebox" title="1">
+										<img src="images/Celebrity/1.png" alt="1" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Celebrity/2.png" class="celebrity_swipebox" title="2">
+										<img src="images/Celebrity/2.png" alt="2" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Celebrity/3.png" class="celebrity_swipebox" title="3">
+										<img src="images/Celebrity/3.png" alt="3" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Celebrity/4.png" class="celebrity_swipebox" title="4">
+										<img src="images/Celebrity/4.png" alt="4" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Celebrity/5.png" class="celebrity_swipebox" title="5">
+										<img src="images/Celebrity/5.png" alt="5" height="42" width="42">
+									</a>
+								</div>
+								<div class="item">
+									<a href="images/Celebrity/6.png" class="celebrity_swipebox" title="5">
+										<img src="images/Celebrity/6.png" alt="5" height="42" width="42">
+									</a>
+								</div>
+							</div>
+						</section>
+					</main>
+				</div>
+
+				<!-- <section id="exemple">
+					<div class="box">
+						<a href="images/Gallery/1.jpg" class="swipebox" title="1">
+							<img src="images/Gallery/small/1.jpg" alt="1">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/2.jpg" class="swipebox" title="2">
+							<img src="images/Gallery/small/2.jpg" alt="2">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/3.jpg" class="swipebox" title="3">
+							<img src="images/Gallery/small/3.jpg" alt="3">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/4.jpg" class="swipebox" title="4">
+							<img src="images/Gallery/small/4.jpg" alt="4">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/5.jpg" class="swipebox" title="5">
+							<img src="images/Gallery/small/5.jpg" alt="5">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/6.jpg" class="swipebox" title="6">
+							<img src="images/Gallery/small/6.jpg" alt="6">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/7.jpg" class="swipebox" title="7">
+							<img src="images/Gallery/small/7.jpg" alt="7">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/8.jpg" class="swipebox" title="8">
+							<img src="images/Gallery/small/8.jpg" alt="8">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/9.jpg" class="swipebox" title="9">
+							<img src="images/Gallery/small/9.jpg" alt="9">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/10.jpg" class="swipebox" title="10">
+							<img src="images/Gallery/small/10.jpg" alt="10">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/11.jpg" class="swipebox" title="11">
+							<img src="images/Gallery/small/11.jpg" alt="11">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/12.jpg" class="swipebox" title="12">
+							<img src="images/Gallery/small/12.jpg" alt="12">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/13.jpg" class="swipebox" title="13">
+							<img src="images/Gallery/small/13.jpg" alt="13">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/14.jpg" class="swipebox" title="14">
+							<img src="images/Gallery/small/14.jpg" alt="14">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/15.jpg" class="swipebox" title="15">
+							<img src="images/Gallery/small/15.jpg" alt="15">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/16.jpg" class="swipebox" title="16">
+							<img src="images/Gallery/small/16.jpg" alt="16">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/17.jpg" class="swipebox" title="17">
+							<img src="images/Gallery/small/17.jpg" alt="17">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/18.jpg" class="swipebox" title="18">
+							<img src="images/Gallery/small/18.jpg" alt="18">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/19.jpg" class="swipebox" title="19">
+							<img src="images/Gallery/small/19.jpg" alt="19">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/20.jpg" class="swipebox" title="20">
+							<img src="images/Gallery/small/20.jpg" alt="20">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/21.jpg" class="swipebox" title="21">
+							<img src="images/Gallery/small/21.jpg" alt="21"> 
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/22.jpg" class="swipebox" title="22">
+							<img src="images/Gallery/small/22.jpg" alt="22">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/23.jpg" class="swipebox" title="23">
+							<img src="images/Gallery/small/23.jpg" alt="23">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/24.jpg" class="swipebox" title="24">
+							<img src="images/Gallery/small/24.jpg" alt="24">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/25.jpg" class="swipebox" title="25">
+							<img src="images/Gallery/small/25.jpg" alt="25">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/26.jpg" class="swipebox" title="26">
+							<img src="images/Gallery/small/26.jpg" alt="26">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/27.jpg" class="swipebox" title="27">
+							<img src="images/Gallery/small/27.jpg" alt="27">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/28.jpg" class="swipebox" title="28">
+							<img src="images/Gallery/small/28.jpg" alt="28">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/29.jpg" class="swipebox" title="29">
+							<img src="images/Gallery/small/29.jpg" alt="29">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/30.jpg" class="swipebox" title="30">
+							<img src="images/Gallery/small/30.jpg" alt="30">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/31.jpg" class="swipebox" title="31">
+							<img src="images/Gallery/small/31.jpg" alt="31">
+						</a>
+					</div>
+					<div class="box">
+						<a href="images/Gallery/32.jpg" class="swipebox" title="32">
+							<img src="images/Gallery/small/32.jpg" alt="32">
+						</a>
+					</div>
+					<div class="clear"></div>
+				</section> -->
+				<div class="clearfix"></div>
+			</div>
+			<div class="price-section" id="pricing">
+				<div class="price-tables">
+					<div class="container">
+						<h3>our <span>price</span></h3>
+						<div class="columns">
+							<img src="images/beach_rooms.png" alt="beach rate"/>
+						</div>
+						<div class="columns2">
+							<ul class="price">
+								<li class="header">Tariff Details</li>
+								<li class="grey">Non A/C Rooms &#8594; &#8377 1500</li>
+								<li class="grey">A/C Rooms &#8594; &#8377 2000</li>
+								<li>Total Rooms &#8594; 6</li>
+								<li>Extra Person Charges Applicable*</li>
+							</ul>
 						</div>
 					</div>
-					<div class="about-section" id="travelguide">
-						<div class="container">
-							<h3>travel <span>guide<span></h3>
-								<div class="single-section">
-									<div class="responsive_tab">
-										<main>
-											<input id="tab1" type="radio" name="tabs" checked>
-											<label for="tab1">Beaches</label>
-											<input id="tab2" type="radio" name="tabs">
-											<label for="tab2">Bunders</label>
-											<input id="tab3" type="radio" name="tabs">
-											<label for="tab3">Temples & Places</label>
-											<input id="tab4" type="radio" name="tabs">
-											<label for="tab4">Forts</label>
-											<input id="tab5" type="radio" name="tabs">
-											<label for="tab5">Water Sports</label>
-											<section id="content1">
-												<div>
-													<span>Malvan</span><br>
+				</div>
+			</div>
+			<div class="blog-section" id="how-to-reach">
+				<div class="container">
+					<h3> How to <span>Reach</span></h3>
+					<div class="single-section">
+						<span>By Rail</span>
+						<p>Kudal is the nearest railway station which is 35 Kms. Kankavali is also the nearest railway station which is 50 Kms. (Car-on-hire is available on request for pick up and drop).</p>
+						<span>By Road - From Mumbai</span>
+						<p>From Mumbai – Goa NH 17 – Hathkhamba – Kankavali – ( Right turn) – Achara - Vaigani - Malvan – Tondavali.  <a href="https://goo.gl/maps/mbKYm9ZxMBM2" target="_blank">Get Map</a></p>
+						<p>From Mumbai – Express Way – Pune – Kolhapur – Gaganbawada – Vaibhavwadi – Talere – Kankavali – ( Right turn) – Achara - Vaigani - Malvan – Tondavali.  <a href="https://goo.gl/maps/mbKYm9ZxMBM2" target="_blank">Get Map</a></p>
+						<span>By Road - From Pune</span>
+						<p>From Pune – Kolhapur – Gaganbawada – Vaibhavwadi – Talere – Kankavali – ( Right turn) – Achara - Vaigani - Malvan – Tondavali. <a href="https://goo.gl/maps/nV5rBSXtCev" target="_blank">Get Map</a></p>
+						<span>By Road - From Goa</span>
+						<p>Mapusa – Banda – Kudal – Malvan – Tondavali. <a href="https://goo.gl/maps/Z4N3W8hwLwk" target="_blank">Get Map</a></p>
+						<span>By Air</span>
+						<p>From Chipi airport - Parule Bazaar - Waghavane - Kumbharmath - Malvan - Tondavali. <a href="https://goo.gl/maps/CHfdEV4A8EpDLNdX7" target="_blank">Get Map</a></p>
+						<p>Goa airport (Dabolim) is nearest domestic airport.</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="about-section" id="travelguide">
+				<div class="container">
+					<h3>travel <span>guide<span></h3>
+						<div class="container text-center">
+							<a href="images/TouristMap.jpeg" class="map_swipebox" title="Tourist Map">
+								<img src="images/TouristMap.jpeg" alt="tourist map" style="height: auto; width: 100%;" />
+							</a>
+						</div>
+					<div class="single-section">
+						<div class="responsive_tab">
+							<main>
+								<input id="tab1" type="radio" name="tabs" checked>
+								<label for="tab1">Beaches</label>
+								<input id="tab2" type="radio" name="tabs">
+								<label for="tab2">Bunders</label>
+								<input id="tab3" type="radio" name="tabs">
+								<label for="tab3">Temples & Places</label>
+								<input id="tab4" type="radio" name="tabs">
+								<label for="tab4">Forts</label>
+								<input id="tab5" type="radio" name="tabs">
+								<label for="tab5">Water Sports</label>
+								
+								<section id="content1">
+									<div class="panel-group" id="accordion">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Malvan</a>
+												</h4>
+											</div>
+											<div id="collapseOne" class="panel-collapse collapse in">
+												<div class="panel-body">
 													<div class="responsive-tab-text">
-														<p>
-															Malvan located in the southernmost district of Maharashtra is a 'taluka' in Sindhudurg District, famous for the historically eminent Fort by the same.
-															Malvan taluka consists of a variety of distinctly pronounced villages like Wadi, Achara, Khalchi Devli, Jamdul, Juva, Pankhol, Talasheel and Sarjekot.
-															The staple food is mainly fish curry and rice with fishing being the major occupation for livelihood.
-															The town produces Alphonso mangoes and is also known for sweets such as Malvani Khaja made from gram-besan flour and coated jaggery as well as Malvani Ladoos.
-															Malvani Dashavtar, a play based on mythological stories, is an important cultural element of the area that attracts loads of viewers.
-															For sightseeing, there are lot of temples, beaches and forts which make one’s visit a memorable one.
-															Several apocryphal and some more credible stories related to the name Malvan exist. Salt producers use term Mahalavan to describe a region rich in salt, a compound word from "Maha" meaning great, and "lavan" meaning plantation.<br>
-															<strong>How to reach</strong><br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> One can reach Malvan by Rail or Road. Boat transport is coming up in near future. <br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> Daily buses commute between Mumbai & Malvan.<br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> By train, Kudal station is 511 Kms away from Thane, 193 Kms from Ratnagiri, 398 Kms from Pune, 968Kms from Nagpur & 95 Kms from Panaji. <br>
+														<p>Malvan located in the southernmost district of Maharashtra is a 'taluka' in Sindhudurg District, famous for the historically eminent Fort by the same.<br>Malvan taluka consists of a variety of distinctly pronounced villages like Wadi, Achara, Khalchi Devli, Jamdul, Juva, Pankhol, Talasheel and Sarjekot.<br>The staple food is mainly fish curry and rice with fishing being the major occupation for livelihood.<br>The town produces Alphonso mangoes and is also known for sweets such as Malvani Khaja made from gram-besan flour and coated jaggery as well as Malvani Ladoos.<br>Malvani Dashavtar, a play based on mythological stories, is an important cultural element of the area that attracts loads of viewers.<br>For sightseeing, there are lot of temples, beaches and forts which make one’s visit a memorable one.<br>Several apocryphal and some more credible stories related to the name Malvan exist. Salt producers use term Mahalavan to describe a region rich in salt, a compound word from "Maha" meaning great, and "lavan" meaning plantation.<br/></br/>
+															<strong>How to reach</strong><br/>
+															<i class="fa fa-hand-o-right" aria-hidden="true"></i> One can reach Malvan by Rail or Road. Boat transport is coming up in near future. <br/>
+															<i class="fa fa-hand-o-right" aria-hidden="true"></i> Daily buses commute between Mumbai & Malvan.<br/>
+															<i class="fa fa-hand-o-right" aria-hidden="true"></i> By train, Kudal station is 511 Kms away from Thane, 193 Kms from Ratnagiri, 398 Kms from Pune, 968Kms from Nagpur & 95 Kms from Panaji. <br/>
 															<i class="fa fa-hand-o-right" aria-hidden="true"></i> By air, Goa airport (Dabholim), a domestic airport is nearest one.
 														</p>
 													</div>
@@ -344,370 +926,687 @@
 														<img src="images/responsive_tab/inside-the-fort.jpg" />
 													</div>
 												</div>
-												<div class="clearfix"> </div>
-												<div>
-													<span>Tondavali Talashil Beach</span><br>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Tondavali Talashil Beach</a>
+												</h4>
+											</div>
+											<div id="collapseTwo" class="panel-collapse collapse">
+												<div class="panel-body">
 													<div class="responsive-tab-text">
-														<p>
-															The village Tondavli in Malvan tehsil is situated between Kalaval creek at east and Arabian seas at west. Lower Tondavli is Talashil wadi.
-															Being near the Kalaval creek Tondavli has many water-sports options such as Sailing in the creek, riding water-scooter, Banana-ride etc. Here you can do 'Dolphin-sighting' without going in far into sea.
-															Attraction
-															There is also a Sangam point (Confluence point) where Kalaval creek joins Arabian Sea.
-															Tondavali sea-shore has white sand and lush green Cyprus orchard. You can have a direct view of 'Kavada rock' in the deep sea from here.
-															Tondavli has two main temples worth visiting. Shri Vagheshwar, a village-deity and Shri Datta Mandir. Talashil has Shri Gopal-krishna Temple with beautiful carvings.
-															The main occupation of Tondavli villagers is fishing and one can test variety of local fish (Bangada, surmai, Paplet, Kolambi, Tarli) here. <br>
-															<strong>How to reach</strong><br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> Tondavli is 22 Kms from Malvan and 45 Kms from Kankavli. <br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> By Air: Dabolim, Goa<br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> By Rail: Kankavli On Konkan Railway<br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> By Road: Malvan 20 KM
-														</p>
+														<p>The village Tondavli in Malvan tehsil is situated between Kalaval creek at east and Arabian seas at west. Lower Tondavli is Talashil wadi. Being near the Kalaval creek Tondavli has many water-sports options such as Sailing in the creek, riding water-scooter, Banana-ride etc. Here you can do 'Dolphin-sighting' without going in far into sea. Attraction There is also a Sangam point (Confluence point) where Kalaval creek joins Arabian Sea. Tondavali sea-shore has white sand and lush green Cyprus orchard. You can have a direct view of 'Kavada rock' in the deep sea from here. Tondavli has two main temples worth visiting. Shri Vagheshwar, a village-deity and Shri Datta Mandir. Talashil has Shri Gopal-krishna Temple with beautiful carvings. The main occupation of Tondavli villagers is fishing and one can test variety of local fish (Bangada, surmai, Paplet, Kolambi, Tarli) here.
+														<br/></br/>
+														<strong>How to reach</strong><br/>
+														<i class="fa fa-hand-o-right" aria-hidden="true"></i> Tondavli is 22 Kms from Malvan and 45 Kms from Kankavli. <br/>
+														<i class="fa fa-hand-o-right" aria-hidden="true"></i> By Air: Dabolim, Goa<br/>
+														<i class="fa fa-hand-o-right" aria-hidden="true"></i> By Rail: Kankavli On Konkan Railway<br/>
+														<i class="fa fa-hand-o-right" aria-hidden="true"></i> By Road: Malvan 20 KM</p>
 													</div>
 													<div class="responsive-tab-img">
 														<img src="images/responsive_tab/talashil.jpg" />
 													</div>
 												</div>
-												<div class="clearfix"> </div>
-												<div>
-													<span>Tarkarli</span><br>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Tarkarli</a>
+												</h4>
+											</div>
+											<div id="collapseThree" class="panel-collapse collapse">
+												<div class="panel-body">
 													<div class="responsive-tab-text">
-														<p>
-															Tarkarli is a village in Malvan taluka in Sindhudurg district in the Indian state of Maharashtra.
-															It is tourist destination and a coral beach. This village is famous for its Ramnavmi Utsav.
-															Tarkarli beach has a long coastline and clear waters.
-															This place has gained prominence because of its long and narrow stretch of beach with pristine waters and water sports.
-															Tarkarli is famous for water sports and boathouses.
-															The wide river, the sailboats and the tiny hamlets situated on the riverbank, add to the tourism of Tarkarli. Sighting dolphins is not a rare event here.
-															This place fishes throughout the year, the sea during summer and winter and back-waters during the monsoon since the sea water enters this area and also due to safety reasons.<br>
-															<strong>How to reach</strong><br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> 24.6 kms from Kinara Beach Resort.
+														<p>Tarkarli is a village in Malvan taluka in Sindhudurg district in the Indian state of Maharashtra. It is tourist destination and a coral beach. This village is famous for its Ramnavmi Utsav. Tarkarli beach has a long coastline and clear waters. This place has gained prominence because of its long and narrow stretch of beach with pristine waters and water sports. Tarkarli is famous for water sports and boathouses. The wide river, the sailboats and the tiny hamlets situated on the riverbank, add to the tourism of Tarkarli. Sighting dolphins is not a rare event here. This place fishes throughout the year, the sea during summer and winter and back-waters during the monsoon since the sea water enters this area and also due to safety reasons.
+														<br/><br/>
+														<strong>How to reach</strong><br>
+														<i class="fa fa-hand-o-right" aria-hidden="true"></i> 24.6 kms from Kinara Beach Resort.
 														</p>
 													</div>
 													<div class="responsive-tab-img">
 														<img src="images/responsive_tab/tarkarli.jpg" />
 													</div>
 												</div>
-												<div class="clearfix"> </div>
-												<div>
-													<span>Devbagh</span><br>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Devbagh</a>
+												</h4>
+											</div>
+											<div id="collapseFour" class="panel-collapse collapse">
+												<div class="panel-body">
 													<div class="responsive-tab-text">
-														<p>
-															Devbagh is a stop for the classic beach lover.
-															Sun, sand, surf, sea and endless open space, Devbagh is the next best thing to having a beach all to you.
-															Between building sandcastles, combing the shore for seashells, endless beach volleyball games, and snorkelling and relaxing and letting the sea wash all your worries away, Devbagh opens a world of serenity and discovery: where you can be one with the elements.
-															For the rest, there’s snorkelling, speed boat cruises, bananaboat rides and para-sailing.
-															The nearby fishing village is a delight, with its fishermen coming in with their fresh catch and the flurry of fisher folk sorting the bounty. <br>
-															<strong>How to reach</strong><br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> 30.2 kms from Kinara Beach Resort via Malvan Achara Road.
+														<p>Devbagh is a stop for the classic beach lover. Sun, sand, surf, sea and endless open space, Devbagh is the next best thing to having a beach all to you. Between building sandcastles, combing the shore for seashells, endless beach volleyball games, and snorkelling and relaxing and letting the sea wash all your worries away, Devbagh opens a world of serenity and discovery: where you can be one with the elements. For the rest, there’s snorkelling, speed boat cruises, bananaboat rides and para-sailing. The nearby fishing village is a delight, with its fishermen coming in with their fresh catch and the flurry of fisher folk sorting the bounty.
+														<br/><br/>
+														<strong>How to reach</strong><br>
+														<i class="fa fa-hand-o-right" aria-hidden="true"></i> 30.2 kms from Kinara Beach Resort via Malvan Achara Road.
 														</p>
 													</div>
 													<div class="responsive-tab-img">
 														<img src="images/responsive_tab/Devbagh.jpg" />
 													</div>
 												</div>
-												<div class="clearfix"> </div>
-											</section>
-											<section id="content2">
-												<div>
-													<span>Sarjekot Bunder</span><br>
+											</div>
+										</div>
+									</div>
+								</section>
+								<section id="content2">
+									<div class="panel-group" id="accordion2">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion2" href="#a2collapseOne">Sarjekot Bunder</a>
+												</h4>
+											</div>
+											<div id="a2collapseOne" class="panel-collapse collapse in">
+												<div class="panel-body">
 													<div class="responsive-tab-text">
-														<p>
-															Sarjekot stands at the mouth of Kolamb creek. In monsoon the Maratha ships were anchored in this creek.
-															It is this point where the Kolamb creek and the Arabian Sea unite.
-															It’s a marvellous view at the junction to see the wavy waters and the creek’s silent flowing water uniting together.
-															It’s a small port for the local ships of fisherman’s of Sarjekot village.
-															Sarjekot is at close promixity from the Malvan Bus stand.<br>
-															<strong>How to reach</strong><br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> By road via Malvan – Achara Road. It is 20 kms from Kinara Beach Resort.<br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> By Boat to Revandi village and then by Road via Malvan – Achara road. It is 4.3 kms from Revandi village.<br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> By walk from Talashil seashore. It is around 2 kms from Kinara Beach Resort.
+														<p>Sarjekot stands at the mouth of Kolamb creek. In monsoon the Maratha ships were anchored in this creek. It is this point where the Kolamb creek and the Arabian Sea unite. It’s a marvellous view at the junction to see the wavy waters and the creek’s silent flowing water uniting together. It’s a small port for the local ships of fisherman’s of Sarjekot village. Sarjekot is at close promixity from the Malvan Bus stand.
+														<br/><br/>
+														<strong>How to reach</strong><br>
+														<i class="fa fa-hand-o-right" aria-hidden="true"></i> By road via Malvan – Achara Road. It is 20 kms from Kinara Beach Resort.<br>
+														<i class="fa fa-hand-o-right" aria-hidden="true"></i> By Boat to Revandi village and then by Road via Malvan – Achara road. It is 4.3 kms from Revandi village.<br>
+														<i class="fa fa-hand-o-right" aria-hidden="true"></i> By walk from Talashil seashore. It is around 2 kms from Kinara Beach Resort.
 														</p>
 													</div>
 													<div class="responsive-tab-img">
 														<img src="images/responsive_tab/Sarjekot.jpg" />
 													</div>
 												</div>
-												<div class="clearfix"> </div>
-											</section>
-											<section id="content3">
-												<div>
-													<span>Gopal Krishna Temple</span><br>
+											</div>
+										</div>
+									</div>
+								</section>
+								<section id="content3">
+									<div class="panel-group" id="accordion3">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion3" href="#a3collapseOne">Gopal Krishna Temple</a>
+												</h4>
+											</div>
+											<div id="a3collapseOne" class="panel-collapse collapse in">
+												<div class="panel-body">
 													<div class="responsive-tab-text">
-														<p>
-															Gopal Krishna temple is a beautifully carved temple situated on the banks of the Talashil beach.
-															<br>
-															<strong>How to reach</strong><br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> Walkable distance from Kinara Beach Resort.<br>
+														<p>Gopal Krishna temple is a beautifully carved temple situated on the banks of the Talashil beach.
+														<br/><br/>
+														<strong>How to reach</strong><br>
+														<i class="fa fa-hand-o-right" aria-hidden="true"></i> Walkable distance from Kinara Beach Resort.<br>
 														</p>
 													</div>
 													<div class="responsive-tab-img">
 														<img src="images/responsive_tab/GopalKrishna.jpg" />
 													</div>
 												</div>
-												<div class="clearfix"> </div>
-
-												<div>
-													<span>Wagheshwar Temple</span><br>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion3" href="#a3collapseTwo">Wagheshwar Temple</a>
+												</h4>
+											</div>
+											<div id="a3collapseTwo" class="panel-collapse collapse">
+												<div class="panel-body">
 													<div class="responsive-tab-text">
-														<p>
-															Wagheshwar temple sits amidst of Tondavali which is 24 Kms away from Malvan.
-															A Shivalingam located in a cave of a big rock. Lot of people come on each Monday to worship the Shivalingam.
-															On the back side of temple there was a bushy jungle with wild animals. People say that in old days tigers were coming in the temple but never disturbed any mankind. So the temple is known as Wagheshwar temple.
-															Just beside the temple there is a big rock in which a cave of size 80 Sq ft is carved.
-															Many tourists come in Tondavali to visit this religious & beautiful tourist spot.<br>
-															<strong>How to reach</strong><br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> 3.5 kms from Kinara Beach Resort.<br>
+														<p>Wagheshwar temple sits amidst of Tondavali which is 24 Kms away from Malvan. A Shivalingam located in a cave of a big rock. Lot of people come on each Monday to worship the Shivalingam. On the back side of temple there was a bushy jungle with wild animals. People say that in old days tigers were coming in the temple but never disturbed any mankind. So the temple is known as Wagheshwar temple. Just beside the temple there is a big rock in which a cave of size 80 Sq ft is carved. Many tourists come in Tondavali to visit this religious & beautiful tourist spot.
+														<br/><br/>
+														<strong>How to reach</strong><br>
+														<i class="fa fa-hand-o-right" aria-hidden="true"></i> 3.5 kms from Kinara Beach Resort.<br>
 														</p>
 													</div>
 													<div class="responsive-tab-img">
 														<img src="images/responsive_tab/Wagheshwar.jpg" />
 													</div>
 												</div>
-												<div class="clearfix"> </div>
-
-												<div>
-													<span>Bhadrakali Temple</span><br>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion3" href="#a3collapseThree">Bhadrakali Temple</a>
+												</h4>
+											</div>
+											<div id="a3collapseThree" class="panel-collapse collapse">
+												<div class="panel-body">
 													<div class="responsive-tab-text">
-														<p>
-															Bhadrakali Temple is said to be established 400 years ago.
-
-															Famous Malvani artist Machindra Kambli’s production house “Bhadrakali Productions” is said to be named after this goddess.
-															The meaning of the name Bhadrakali stands for “Bhadra” meaning God Shivshankar and “Kali” meaning Goddess Parvati.
-															Temple premise has a self proclaimed idol.
-															Every year on festivals of Shravan Somvar and Mahashivratri, there is huge crowd of devotees at the temple for blessings of goddess Bhadrakali.
-															Temple environment is very calm and peacefull.<br>
-															<strong>How to reach</strong><br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> Bhadrakali Temple is close by boat from Kinara Beach Resort.<br>
+														<p>Bhadrakali Temple is said to be established 400 years ago. Famous Malvani artist Machindra Kambli’s production house “Bhadrakali Productions” is said to be named after this goddess. The meaning of the name Bhadrakali stands for “Bhadra” meaning God Shivshankar and “Kali” meaning Goddess Parvati. Temple premise has a self proclaimed idol. Every year on festivals of Shravan Somvar and Mahashivratri, there is huge crowd of devotees at the temple for blessings of goddess Bhadrakali. Temple environment is very calm and peacefull.
+														<br/><br/>
+														<strong>How to reach</strong><br>
+														<i class="fa fa-hand-o-right" aria-hidden="true"></i> Bhadrakali Temple is close by boat from Kinara Beach Resort.<br>
 														</p>
 													</div>
 													<div class="responsive-tab-img">
 														<img src="images/responsive_tab/Bhadrakalirevandi.jpg" />
 													</div>
 												</div>
-												<div class="clearfix"> </div>
-
-												<div>
-													<span>Bharadi Devi Mandir</span><br>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion3" href="#a3collapseFour">Bharadi Devi Mandir</a>
+												</h4>
+											</div>
+											<div id="a3collapseFour" class="panel-collapse collapse">
+												<div class="panel-body">
 													<div class="responsive-tab-text">
-														<p>
-															This is the Jaagrut devasthan situated at Anganewadi, 10 km from Malvan.
-															The Bharadi devi temple is in the village of Masure.
-															Anganewadi is the small village of Masure village.
-															The Bharadi devi is famous for her wish-fulfilling (Navas) power.
-															Her devotees express their wishes (Navas) before her and once the wish is fulfilled they come again for a Darshan (visit) to express their gratitude.
-															The highlight of Anganewadi is an annual fair organised every February when two hundred thousand people visit the temple during the fair.<br>
-															<strong>How to reach</strong><br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> 24.2 kms from Kinara Beach Resort via Malvan Achara Road.<br>
+														<p>This is the Jaagrut devasthan situated at Anganewadi, 10 km from Malvan. The Bharadi devi temple is in the village of Masure. Anganewadi is the small village of Masure village. The Bharadi devi is famous for her wish-fulfilling (Navas) power. Her devotees express their wishes (Navas) before her and once the wish is fulfilled they come again for a Darshan (visit) to express their gratitude. The highlight of Anganewadi is an annual fair organised every February when two hundred thousand people visit the temple during the fair.
+														<br/><br/>
+														<strong>How to reach</strong><br>
+														<i class="fa fa-hand-o-right" aria-hidden="true"></i> 24.2 kms from Kinara Beach Resort via Malvan Achara Road.<br>
 														</p>
 													</div>
 													<div class="responsive-tab-img">
 														<img src="images/responsive_tab/Bharadi.jpg" />
 													</div>
 												</div>
-												<div class="clearfix"> </div>
-
-												<div>
-													<span>Malvan Bazaar</span><br>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion3" href="#a3collapseFive">Malvan Bazaar</a>
+												</h4>
+											</div>
+											<div id="a3collapseFive" class="panel-collapse collapse">
+												<div class="panel-body">
 													<div class="responsive-tab-text">
-														<p>
-															Malvan although more of a holiday destination also has a small commercial center.
-															While in Malvan a visit to the Malvan market is quite warranted.
-															One could shop for authentic Malvani hand groung masalas here in the Malvan market.
-															Apart from the spices you can also purchase locally grown good quality cashew nuts, Kokam syrup and famous wooden toys and wooden artefacts made by hand.
-															Here you can buy fresh fish and as well as dried fish.
-															On the seashore you could also find a Vegetable market.
-															Market serves a lot of nearby villages and is always busted with people during the day time.<br>
-															<strong>How to reach</strong><br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> 21.4 kms from Kinara Beach Resort.<br>
+														<p>Malvan although more of a holiday destination also has a small commercial center. While in Malvan a visit to the Malvan market is quite warranted. One could shop for authentic Malvani hand groung masalas here in the Malvan market. Apart from the spices you can also purchase locally grown good quality cashew nuts, Kokam syrup and famous wooden toys and wooden artefacts made by hand. Here you can buy fresh fish and as well as dried fish. On the seashore you could also find a Vegetable market. Market serves a lot of nearby villages and is always busted with people during the day time.
+														<br/><br/>
+														<strong>How to reach</strong><br>
+														<i class="fa fa-hand-o-right" aria-hidden="true"></i> 21.4 kms from Kinara Beach Resort.<br>
 														</p>
 													</div>
 													<div class="responsive-tab-img">
 														<img src="images/responsive_tab/malvan.jpg" />
 													</div>
 												</div>
-												<div class="clearfix"> </div>
-
-												<div>
-													<span>Tsunami Island</span><br>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion3" href="#a3collapseSix">Tsunami Island</a>
+												</h4>
+											</div>
+											<div id="a3collapseSix" class="panel-collapse collapse">
+												<div class="panel-body">
 													<div class="responsive-tab-text">
-														<p>
-															Tsunami Island (near Devbaug beach) is a small island on the delta of Tarkarli river.
-															This beach cum island also is the place to enjoy boat ride in the backwaters of Tarkarli River.
-															This island is not formed due to Tsunami waves, but due to this imaginary name it is a popular tourist destination for water sports where one can enjoy rides like Jet-Ski, Banana boat ride, Bumper boat, Kayaks etc.
-															Best time to visit Tsunami Island for water sports is during high tide when the small island is partially submerged under the water (till knee length).<br>
-															<strong>How to reach</strong><br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> 32.8 kms from Kinara Beach Resort via Malvan Achara Road.<br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> 41.2 kms from Kinara Beach Resort via Giroba Mandir Road and Malvan Achara Road.<br>
+														<p>Tsunami Island (near Devbaug beach) is a small island on the delta of Tarkarli river. This beach cum island also is the place to enjoy boat ride in the backwaters of Tarkarli River. This island is not formed due to Tsunami waves, but due to this imaginary name it is a popular tourist destination for water sports where one can enjoy rides like Jet-Ski, Banana boat ride, Bumper boat, Kayaks etc. Best time to visit Tsunami Island for water sports is during high tide when the small island is partially submerged under the water (till knee length).
+														<br/><br/>
+														<strong>How to reach</strong><br>
+														<i class="fa fa-hand-o-right" aria-hidden="true"></i> 32.8 kms from Kinara Beach Resort via Malvan Achara Road.<br>
+														<i class="fa fa-hand-o-right" aria-hidden="true"></i> 41.2 kms from Kinara Beach Resort via Giroba Mandir Road and Malvan Achara Road.<br>
 														</p>
 													</div>
 													<div class="responsive-tab-img">
 														<img src="images/responsive_tab/tsunamiisland.jpg" />
 													</div>
 												</div>
-												<div class="clearfix"> </div>
-
-												<div>
-													<span>Rock Garden</span><br>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion3" href="#a3collapseSeven">Rock Garden</a>
+												</h4>
+											</div>
+											<div id="a3collapseSeven" class="panel-collapse collapse">
+												<div class="panel-body">
 													<div class="responsive-tab-text">
-														<p>
-															The Rock garden is situated near the Arase Mahal, on the rocky shore of Malvan.
-															It is a beautifully built garden overlooking the Chivla beach.
-															Rock garden in Malvan is a best place to relax on the rocks and enjoy the calm of the sea side.
-															A well landscaped malvan rock garden is also one of the popular places located at half kilometer distance from Malvan jetty near Arase Mahal.
-															This garden offers a fantastic view of the wide spread Chivala beach.
-															Unlike other gardens this garden is unique in its nature since there is no sand but a carpet of huge rocks and green lawns.<br>
-															<strong>How to reach</strong><br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> 32.8 kms from Kinara Beach Resort via Malvan Achara Road.<br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> 21.6 kms from Kinara Beach Resort.<br>
+														<p>The Rock garden is situated near the Arase Mahal, on the rocky shore of Malvan. It is a beautifully built garden overlooking the Chivla beach. Rock garden in Malvan is a best place to relax on the rocks and enjoy the calm of the sea side. A well landscaped malvan rock garden is also one of the popular places located at half kilometer distance from Malvan jetty near Arase Mahal. This garden offers a fantastic view of the wide spread Chivala beach. Unlike other gardens this garden is unique in its nature since there is no sand but a carpet of huge rocks and green lawns.
+														<br/><br/>
+														<strong>How to reach</strong><br>
+														<i class="fa fa-hand-o-right" aria-hidden="true"></i> 32.8 kms from Kinara Beach Resort via Malvan Achara Road.<br>
+														<i class="fa fa-hand-o-right" aria-hidden="true"></i> 21.6 kms from Kinara Beach Resort.<br>
 														</p>
 													</div>
 													<div class="responsive-tab-img">
 														<img src="images/responsive_tab/rockGarden.jpg" />
 													</div>
 												</div>
-												<div class="clearfix"> </div>
-
-
-											</section>
-											<section id="content4">
-
-												<div>
-													<span>Sindhudurg Fort</span><br>
+											</div>
+										</div>
+									</div>
+								</section>
+								<section id="content4">
+									<div class="panel-group" id="accordion4">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion4" href="#a4collapseOne">Sindhudurg Fort</a>
+												</h4>
+											</div>
+											<div id="a4collapseOne" class="panel-collapse collapse in">
+												<div class="panel-body">
 													<div class="responsive-tab-text">
-														<p>
-															This fort was constructed by Shri Chhatrapati Shivaji Maharaj, the Chhatrapati of the Maratha Empire.
-
-															The construction was done under the supervision of Hiroji Indulkar, in the year 1656.
-
-															For casting and the foundation stones, over 2,000 khandis (4,000 mounds) of iron and lead were used to it lay down firmly.
-															There is a temple dedicated to Shivaji inside the fort. This is the only shrine of its kind in the country, which was built by his son Rajaram.
-															Built over a period of three years (1664–67), the sea fort is spread over 48 acres (190,000 m2) with a two-mile (3 km) long rampart, and walls that are 30 feet (9.1 m) high and 12 feet (3.7 m) thick.
-															The massive walls were designed to serve as a deterrent to approaching enemies and to the waves and tides of the Arabian Sea.
-															The main entrance is concealed in such a way that no one can pinpoint it from outside. <br>
-															<strong>How to reach</strong><br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> 22.8 kms from Kinara Beach Resort.<br>
+														<p>This fort was constructed by Shri Chhatrapati Shivaji Maharaj, the Chhatrapati of the Maratha Empire. The construction was done under the supervision of Hiroji Indulkar, in the year 1656. For casting and the foundation stones, over 2,000 khandis (4,000 mounds) of iron and lead were used to it lay down firmly. There is a temple dedicated to Shivaji inside the fort. This is the only shrine of its kind in the country, which was built by his son Rajaram. Built over a period of three years (1664–67), the sea fort is spread over 48 acres (190,000 m2) with a two-mile (3 km) long rampart, and walls that are 30 feet (9.1 m) high and 12 feet (3.7 m) thick. The massive walls were designed to serve as a deterrent to approaching enemies and to the waves and tides of the Arabian Sea. The main entrance is concealed in such a way that no one can pinpoint it from outside.
+														<br/><br/>
+														<strong>How to reach</strong><br>
+														<i class="fa fa-hand-o-right" aria-hidden="true"></i> 22.8 kms from Kinara Beach Resort.<br>
 														</p>
 													</div>
 													<div class="responsive-tab-img">
 														<img src="images/responsive_tab/SindhudurgFort.jpg" />
 													</div>
 												</div>
-												<div class="clearfix"> </div>
-
-
-												<div>
-													<span>Vijaydurg Fort</span><br>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion4" href="#a4collapseTwo">Vijaydurg Fort</a>
+												</h4>
+											</div>
+											<div id="a4collapseTwo" class="panel-collapse collapse">
+												<div class="panel-body">
 													<div class="responsive-tab-text">
-														<p>
-															The oldest fort on Sindhudurg coast constructed in the regime of Raja Bhoj of shilahar dynasty in 1205 (construction period 1193-1205).
-															The fort was earlier known as "Gheria" as it is situated in the village "Girye".
-															Shivaji Maharaj won this fort from Adilshaha of Bijapur in 1653 and renamed it as “Vijay Durg” as the then Hindu solar year’s name was “Vijay”.
-															This is only one of the two forts of the Maratha kingdom, where King Shivaji personally hoisted the saffron flag.  The other fort is "Torana".
-															This fort was also known as "Eastern Gibraltar" as this fort was impregnable for a long time like the fort “Gibraltar” in Europe.<br>
-															<strong>How to reach</strong><br>
-															<i class="fa fa-hand-o-right" aria-hidden="true"></i> 68.4 kms from Kinara Beach Resort via Achara Devgad Road.<br>
+														<p>The oldest fort on Sindhudurg coast constructed in the regime of Raja Bhoj of shilahar dynasty in 1205 (construction period 1193-1205). The fort was earlier known as "Gheria" as it is situated in the village "Girye". Shivaji Maharaj won this fort from Adilshaha of Bijapur in 1653 and renamed it as “Vijay Durg” as the then Hindu solar year’s name was “Vijay”. This is only one of the two forts of the Maratha kingdom, where King Shivaji personally hoisted the saffron flag.  The other fort is "Torana". This fort was also known as "Eastern Gibraltar" as this fort was impregnable for a long time like the fort “Gibraltar” in Europe.
+														<br/><br/>
+														<strong>How to reach</strong><br>
+														<i class="fa fa-hand-o-right" aria-hidden="true"></i> 68.4 kms from Kinara Beach Resort via Achara Devgad Road.<br>
 														</p>
 													</div>
 													<div class="responsive-tab-img">
 														<img src="images/responsive_tab/vijaydurg.jpg" />
 													</div>
 												</div>
-												<div class="clearfix"> </div>
-											</section>
-											<section id="content5">
-												<p>
-													<i class="fa fa-hand-o-right" aria-hidden="true"></i> Scuba Diving<br>
-													<i class="fa fa-hand-o-right" aria-hidden="true"></i> Snorkelling<br>
-													<i class="fa fa-hand-o-right" aria-hidden="true"></i> Boat Ride<br>
-													<i class="fa fa-hand-o-right" aria-hidden="true"></i> Dolphin Point<br>
-													<i class="fa fa-hand-o-right" aria-hidden="true"></i> Para Gliding<br>
-													<i class="fa fa-hand-o-right" aria-hidden="true"></i> Ski-Ride<br>
-													<i class="fa fa-hand-o-right" aria-hidden="true"></i> Banana Ride<br>
-												</p>
-											</section>
-										</main>
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
-							</div>
-
-							<div class="visitorfeedback-section" id="visitorfeedback">
-								<h3>Visitors <span>Feedback</span></h3>
-								<section id="exemple">
-									<div class="box"> <a href="images/Feedback/1.jpg" class="swipebox" title="1"> <img border="5" src="images/Feedback/small/1.jpg" alt="1" height="42" width="42"> </a> </div>
-									<div class="box"> <a href="images/Feedback/2.jpg" class="swipebox" title="2"> <img border="5" src="images/Feedback/small/2.jpg" alt="2" height="42" width="42"> </a> </div>
-									<div class="box"> <a href="images/Feedback/3.jpg" class="swipebox" title="3"> <img border="5" src="images/Feedback/small/3.jpg" alt="3" height="42" width="42"> </a> </div>
-									<div class="box"> <a href="images/Feedback/4.jpg" class="swipebox" title="4"> <img border="5" src="images/Feedback/small/4.jpg" alt="4" height="42" width="42"> </a> </div>
-									<div class="box"> <a href="images/Feedback/5.jpg" class="swipebox" title="5"> <img border="5" src="images/Feedback/small/5.jpg" alt="5" height="42" width="42"> </a> </div>
-
-									<div class="clear"></div>
 								</section>
-								<div class="clearfix"> </div>
-
-							</div>
-
-							<div class="contact-section" id="contact">
-								<div class="container">
-									<h3>contact <span>us</span></h3>
-									<div class="contact-grid">
-										<div class="col-md-6 contactdetails-grid">
-											<div class="address">
-												<h4>Address</h4>
-												<p>Mr. Tata Tikam,</p>
-												<p>Tondavali-Talashil Beach,</p>
-												<p>Malvan,</p>
-												<p>Dist. Sindhudurg,</p>
-												<p>Maharashtra, India - 416606.</p>
-												<p>Phone: <u><a href="tel:+919423302669">9423302669</a></u>/ <u><a href="tel:+919404170948">9404170948</a></u>/ <u><a href="tel:+919545619163">9545619163</a></u></p>
-												<p>Email: <u><a href="mailto:tatatikam9@gmail.com">tatatikam9@gmail.com</a></u></p>
-												<p>Website: <u><a href="http://www.kinarabeachresort.com" target="_blank">www.kinarabeachresort.com</a></u></p>
-												<p>&nbsp;</p>
-												<h4>Bank Account Details</h4>
-												<p>Bank : Bank Of Maharashtra</p>
-												<p>Branch : Malvan</p>
-												<p>Account name : Pundalik Radhakrishna Tikam</p>
-												<p>Account No : 20086455347</p>
-												<p>IFSC code : MAHB0000072</p>
-											</div>
+								<section id="content5">
+									<div class="owl-carousel owl-theme wsGallery">
+										<div class="item">
+											<a href="images/sw1.jpeg" class="ws_swipebox" title="1">
+												<img src="images/sw1.jpeg" alt="1" height="42" width="42">
+											</a>
 										</div>
-										<div class="col-md-6 contactdetails-grid1">
-											<div class="google-map">
-												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.0304972461645!2d73.45624511485907!3d16.11572318885223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3beaa778da3e765b%3A0xa4135ef2801ea40!2sKinara+Beach+Resort!5e0!3m2!1sen!2sin!4v1491138716642"></iframe>
-											</div>
+										<div class="item">
+											<a href="images/sw2.jpeg" class="ws_swipebox" title="2">
+												<img src="images/sw2.jpeg" alt="2" height="42" width="42">
+											</a>
 										</div>
-										<div class="clearfix"> </div>
+										<div class="item">
+											<a href="images/sw3.jpeg" class="ws_swipebox" title="3">
+												<img src="images/sw3.jpeg" alt="3" height="42" width="42">
+											</a>
+										</div>
+										<div class="item">
+											<a href="images/sw4.jpeg" class="ws_swipebox" title="4">
+												<img src="images/sw4.jpeg" alt="4" height="42" width="42">
+											</a>
+										</div>
+									</div>
+								</section>
+							</main>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="visitorfeedback-section" id="visitorfeedback">
+				<h3>Visitors <span>Feedback</span></h3>
+				<div class="container-fluid">
+					<div class="owl-carousel owl-theme" id="feedbacks">
+						<div class="item">
+							<div class="card">
+								<div class="card-header">
+									<h4>Jayesh Sawant</h4>
+									<p class="text-muted">a week ago on <img src="images/icons/google.png" /> Google</p>
+								</div>
+								<div class="card-body">
+									<p id="review1">No words to say about this location.
+										I am from kankavali only but never gone to malvan side for hangout in my life.
+										I personally recommend this location if anyone want some relax place to chill in sea and river side.<br />From kankavali and kudal railway stn its near about 45km distance.
+										Let me tell about our experience and stay over there.
+										For us this was complete unplanned trip, As our actual planned is cancelled so Me, my wife decided for small trip to malvan.<br />We saw kinara beach restaurant reviews on google map and decided yes to go this resort only.
+										Due to some reason we had to get down at kudal railway stn instead kankavali stn , i personally recommend kankavali railway is nearest stn. From kankavali bus depo , Direct Tondivali or Achara buses are available. if you are using local transport then
+										Traveling perspective it was bit long again as we travelled in Aprl month :) . if someone have four wheeler then its well n good. you can enjoy lot.<br />Now let talk about location of resort. Believe me once you reach there you will be in like heaven and forget all travelling headache. Resort is located at Talashil gao ,
+										In front of resort blue sea is there and back side river with back water. unbelievable location. Sangam point must to see.
+										Its again private beach even at weekend time. you can enjoy dolphins and local fisher mans also. very good village people.<br />(Tata Tikam) owner is very humble man and having friendly behavior. he arranged vehicle for us to reach at tondvali phata when we were travelling back.
+										Nice family. veg or NonVeg food available. we ordered Surami thali , paplet thali , shimpla gravy, crab thali , prawns sukha. rates are average again.
+										We will surely visit again.<br />Thanks Kinara resort and Tikam family for this wonderful experience.</p>
+								</div>
+								<div class="card-footer">
+									<div class="stars">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="footer-section">
-							<div class="container">
-								<div class="footer-top">
-									<div class="social-icons">
-										<a href="https://www.facebook.com/Kinara-Beach-Resort-Tondavali-909163065846090/"><i class="icon1"></i></a>
-										<a href="mailto:tatatikam9@gmail.com"><i class="icon3"></i></a>
+						<div class="item">
+							<div class="card">
+								<div class="card-header">
+									<h4>Sanket Chodnekar</h4>
+									<p class="text-muted">a week ago on <img src="images/icons/google.png" /> Google</p>
+								</div>
+								<div class="card-body">
+									<p id="review2">Love the life you live. Leave the life you Love.
+										Great Malvani Food And Fish fresh fantastic. 🥰</p>
+								</div>
+								<div class="card-footer">
+									<div class="stars">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
 									</div>
 								</div>
-								<div class="footer-bottom">
-									<p> Copyright &copy;2017  All rights  Reserved | Developed by<a href="mailto:contact@rohitsawant.co.in">Rohit Sawant</a> & <a href="mailto:tandel.samir@gmail.com">Samir Tandel</a><a href="http://w3layouts.com" target="target_blank" style="display:none">W3Layouts</a></p>
-								</div>
-								<script type="text/javascript">
-									$(document).ready(function() {
-										/*
-											var defaults = {
-											containerID: 'toTop', // fading element id
-											containerHoverID: 'toTopHover', // fading element hover id
-											scrollSpeed: 1200,
-											easingType: 'linear'
-											};
-										*/
-
-										$().UItoTop({ easingType: 'easeOutQuart' });
-
-									});
-								</script>
-								<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 							</div>
 						</div>
-					</body>
-				</html>
+						<div class="item">
+							<div class="card">
+								<div class="card-header">
+									<h4>Sahadev Warang</h4>
+									<p class="text-muted">a week ago on <img src="images/icons/google.png" /> Google</p>
+								</div>
+								<div class="card-body">
+									<p id="review3">The place is awesome to stay with calm nature which includes front view of the sea and back You can find a river which is the best combination to experience.</p>
+								</div>
+								<div class="card-footer">
+									<div class="stars">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<div class="card-header">
+									<h4>linksarvesh</h4>
+									<p class="text-muted">a month ago on <img src="images/icons/google.png" /> Google</p>
+								</div>
+								<div class="card-body">
+									<p id="review4">One of the best place I have ever visited....One can say it is untouched beach.....Very calm and peaceful atmosphere......It was refreshing experience.... Staying with Tata Tikam ji was best experience....flet like staying at home only ....Best service and best food you get here.....I m very much thankful to entire family of Tata Tikam for such a great service....</p>
+								</div>
+								<div class="card-footer">
+									<div class="stars">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<div class="card-header">
+									<h4>Mahendra Salunkhe</h4>
+									<p class="text-muted">a month ago on <img src="images/icons/google.png" /> Google</p>
+								</div>
+								<div class="card-body">
+									<p id="review5">this is the place where you can disconnect from the noisy busy polluted urban routine and connect to the nature and self. Picture perfect beauty, fresh smell of sea, tastiest veg and non veg food and most important 'Hospitality". Owners greet and meet and serve you with Love and affection....</p>
+								</div>
+								<div class="card-footer">
+									<div class="stars">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<div class="card-header">
+									<h4>Kaushal Shirole</h4>
+									<p class="text-muted">3 months ago on <img src="images/icons/google.png" /> Google</p>
+								</div>
+								<div class="card-body">
+									<p id="review6">Currently, I have stayed at this resort. Very comfortable resort to stay. Owner's nature is very sweet and kind. The important thing is that the beach is right in front of resort and has a very good view and the surroundings are peaceful. The food is great, it tests like home... The rooms are clean and comfortable and all this at a very affordable price...</p>
+								</div>
+								<div class="card-footer">
+									<div class="stars">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<div class="card-header">
+									<h4>Kiran Sangvai</h4>
+									<p class="text-muted">3 months ago on <img src="images/icons/google.png" /> Google</p>
+								</div>
+								<div class="card-body">
+									<p id="review7">Host Tata is so polite and good natured person and provides valuable information for your events. Here food is good and so as the location. It's an offbeat beach away from crowd. But you can enjoy the water sports when you are in good numbers.</p>
+								</div>
+								<div class="card-footer">
+									<div class="stars">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<!-- <i class="fa-solid fa-star-half-stroke"></i> -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<div class="card-header">
+									<h4>Neeraj Rane</h4>
+									<p class="text-muted">5 months ago on <img src="images/icons/google.png" /> Google</p>
+								</div>
+								<div class="card-body">
+									<p id="review8">Firstly a Big Thank You to owner Tata Tikam for a great hospitality.
+									A very pleasant peaceful and beautiful location with great view. The rooms are also good and properly maintained.<br />
+									Not to forget a lovely lip-smacking food (Prawns were too good missing those already).
+									A good place to spend a relaxed holiday with family and friends with a awesome Sea view on one side and a Backwater view on other side. Looking forward to visit again soon..😍😍</p>
+								</div>
+								<div class="card-footer">
+									<div class="stars">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<a href="images/Feedback/1.jpg" class="vf_swipebox" title="1">
+								<img src="images/Feedback/small/1.jpg" alt="1" height="42" width="42">
+							</a>
+						</div>
+						<div class="item">
+							<a href="images/Feedback/3.jpg" class="vf_swipebox" title="3">
+								<img src="images/Feedback/small/3.jpg" alt="3" height="42" width="42">
+							</a>
+						</div>
+						<div class="item">
+							<a href="images/Feedback/4.jpg" class="vf_swipebox" title="4">
+								<img src="images/Feedback/small/4.jpg" alt="4" height="42" width="42">
+							</a>
+						</div>
+						<div class="item">
+							<a href="images/Feedback/5.jpg" class="vf_swipebox" title="5">
+								<img src="images/Feedback/small/5.jpg" alt="5" height="42" width="42">
+							</a>
+						</div>
+					</div>
+				</div>
+			
+				<div class="container" style="margin: 5rem auto;">
+					<div class="row">
+						<div class="col-sm-6">
+							<iframe style="width: 100%;" height="315" src="https://www.youtube.com/embed/OT671HkRg2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						</div>
+						<div class="col-sm-6">
+							<iframe style="width: 100%;" height="315" src="https://www.youtube.com/embed/Sa-6C4XuFKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="contact-section" id="contact">
+				<div class="container">
+					<h3>contact <span>us</span></h3>
+					<div class="contact-grid">
+						<div class="col-md-6 contactdetails-grid">
+							<div class="address">
+								<h4>Address</h4>
+								<p>Mr. Tata Tikam,</p>
+								<p>Kinara Beach Resort,</p>
+								<p>Tondavali-Talashil Beach,</p>
+								<p>Malvan,</p>
+								<p>Dist. Sindhudurg,</p>
+								<p>Maharashtra, India - 416606.</p>
+								<br>
+								<p style="margin-bottom: 0.5rem;">Phone: <u><a href="tel:+919423302669">9423302669</a></u>/ <u><a href="tel:+919404170948">9404170948</a></u>/ <u><a href="tel:+919545619163">9545619163</a></u></p>
+								<p style="margin-bottom: 0.5rem;">G-pay: <u><a href="tel:+919423302669">9423302669</a></u></p>
+								<p style="margin-bottom: 0.5rem;">Email: <u><a href="mailto:tatatikam9@gmail.com">tatatikam9@gmail.com</a></u></p>
+								<p style="margin-bottom: 0.5rem;">Website: <u><a href="http://www.kinarabeachresort.com" target="_blank">www.kinarabeachresort.com</a></u></p>
+								<!-- <p>&nbsp;</p> -->
+							</div>
+						</div>
+						<div class="col-md-6 contactdetails-grid1">
+							<div class="google-map">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.0304972461645!2d73.45624511485907!3d16.11572318885223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3beaa778da3e765b%3A0xa4135ef2801ea40!2sKinara+Beach+Resort!5e0!3m2!1sen!2sin!4v1491138716642"></iframe>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+		</div>			
+		<div class="footer-section">
+			<div class="container">
+				<div class="footer-top">
+					<div class="social-icons">
+						<a href="https://www.facebook.com/kinara-beach-resort-tondavali-909163065846090/"><span class="fb"></span></a>
+						<a href="mailto:tatatikam9@gmail.com"><span class="gmail"></span></a>
+						<a href="https://www.instagram.com/kinarabeachresort/"><span class="insta"></a>
+						<a href="https://wa.me/919423302669"><span class="whatsapp"></a>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p> Copyright &copy;2017  All rights  Reserved | Developed by<a href="mailto:contact@rohitsawant.co.in">Rohit Sawant</a> & <a href="mailto:tandel.samir@gmail.com">Samir Tandel</a><a href="http://w3layouts.com" target="target_blank" style="display:none">W3Layouts</a></p>
+					<a href="https://webmasterguru.in" class="webmasterguru">Webmaster Guru</a>
+				</div>
+				<!-- <script type="text/javascript">
+					$(document).ready(function() {
+						/*
+							var defaults = {
+							containerID: 'toTop', // fading element id
+							containerHoverID: 'toTopHover', // fading element hover id
+							scrollSpeed: 1200,
+							easingType: 'linear'
+							};
+						*/
+
+						$().UItoTop({ easingType: 'easeOutQuart' });
+
+					});
+				</script> -->
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
+		</div>
+
+		<script>		
+			$('#feedbacks').owlCarousel({
+				loop:true,
+				margin:10,
+				nav:false,
+				autoplay:true,
+				autoplayTimeout:4000,
+				autoplayHoverPause:true,
+				responsive:{
+					0:{
+						items:1
+					},
+					600:{
+						items:3
+					},
+					1000:{
+						items:3
+					}
+				}
+			});
+
+			$('.owlGallery').owlCarousel({
+				loop:true,
+				margin:10,
+				nav:false,
+				autoplay:true,
+				autoplayTimeout:4000,
+				autoplayHoverPause:false,
+				responsive:{
+					0:{
+						items:1
+					},
+					600:{
+						items:3
+					},
+					1000:{
+						items:6,
+						slideBy:6,
+						autoplayTimeout:5000
+					}
+				}
+			});
+
+			$('.wsGallery').owlCarousel({
+				loop:true,
+				margin:10,
+				nav:false,
+				autoplay:true,
+				autoplayTimeout:4000,
+				autoplayHoverPause:true,
+				responsive:{
+					0:{
+						items:1
+					},
+					600:{
+						items:3
+					},
+					1000:{
+						items:4,
+						slideBy:4
+					}
+				}
+			});
+
+			// $(".card-body p").each(function(){
+			// 	var id = $(this).attr('id');
+			// 	var element =  document.getElementById(id);
+				
+			// 	if (element.offsetHeight < element.scrollHeight || element.offsetWidth < element.scrollWidth) {
+			// 		var button = "<a href=\"javascript:readMore('"+id+"')\">Read More</a>";
+			// 		var ele = element.parentElement;
+			// 		$(ele).append(button);
+			// 		//console.log(id);
+			// 	}
+			// })
+
+			// function readMore(id){
+			// 	var element=document. getElementById(id);
+			// 	element.style.overflow="auto";
+			// }
+		</script>
+	</body>
+</html>
